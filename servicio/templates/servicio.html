@@ -2,25 +2,26 @@
 <title>{% block tittle %} Servicios Mape {% endblock %}</title>
 
 {% block content %}
-
+    <br>
     {% for servi in servicio %}  <!-- INICO DEL CONTENIDO DE LA PAGINA -->  <!-- DIMENCIONES DE LA IMAGEN 500x500-->
     <div class="container marketing contec-contac">
         <div class="row featurette"  >
             <div class="col-md-7" >
                 <h1>{{servi.titulo}}</h1>
                 {% autoescape off %}
-                    <p>{{servi.contenido}}</p> 
+                    <p class="text-md">{{servi.contenido}}</p> 
                 {% endautoescape %}
             </div>
             <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" preserveAspectRatio="xMidYMid slice"  src="{{servi.imagen.url}}" alt="{{servi.titulo}}"> <!-- 500x500-->               
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluida mx-auto" width="500" height="500" preserveAspectRatio="xMidYMid slice"  src="{{servi.imagen.url}}" alt="{{servi.titulo}}"> <!-- 500x500-->               
             </div>
-            <hr class="featurette-divider-min">            
+            <!-- <hr class="featurette-divider-min">             -->
         </div>
     </div>   
+    <hr class="featurette-divider-min"> 
     {% endfor %}         
 {% endblock %}           <!-- FIN DEL CONTENIDO DE LA PAGINA -->
 
-{% block footer %} 
+<!-- {% block footer %} 
     <h3>FOOTER Servicios</h3>
-{% endblock %}
+{% endblock %} -->

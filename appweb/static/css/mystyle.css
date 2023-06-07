@@ -1,4 +1,8 @@
 /* #######################  FOOTER  ############################ */
+#text-mape{
+display: block;
+}
+
 .center{                        
     text-align: center;
 }
@@ -18,7 +22,7 @@
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap:50px;
-    padding: 1rem 0px;
+    /* padding: 1rem 0px; */
 }
 
 .pie-pagina{
@@ -33,7 +37,7 @@
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap:50px;
-    padding: 1% 0px;
+    padding: 2px 0px;
 }
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
@@ -50,10 +54,10 @@
     /* margin-bottom: 25px; */
     font-size: var(--s);
 }
-.pie-pagina .grupo-1 .box p{
-    /* color: #efefef; */
+/* .pie-pagina .grupo-1 .box p{
+    color: #efefef;
     margin-bottom: 10px;
-}
+} */
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
     text-decoration: none;
@@ -71,7 +75,7 @@
 }
 .pie-pagina .grupo-2{
     background-color: #0a1a2a;
-    padding: 15px 10px;
+    /* padding: 15px 10px; */
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
     color: #fff;
@@ -82,9 +86,33 @@
 
 .text-fotter{
     font-size: var(--md);
+    margin: 0;
+    padding: 0 0 0 1rem;
+    text-decoration: none;
 }
 
+.icon-foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-md{
+    font-size: var(--md);
+    padding: 0 0 0 4rem;
+}
+
+.img-fluida{
+    max-width: 300px;
+    height: 300px;
+    border-radius: 26% 0%;
+}
+
+
 @media screen and (max-width:800px){
+    #text-mape{
+        display: none;
+    }
     .pie-pagina .grupo-1 .red-social a{
         display: inline-block;
         text-decoration: none;
